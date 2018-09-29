@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COUNT</title>
+</head>
+<body>
+    <h1>Original text is: </h1>
+    {{ fulltext }}
+    <h1>counted words: </h1>
+    {{ count }}
+    <h1>Number of re-occurences per word: </h1>
+    {% for word, occurences in worddictionary %}
+    {{ word }}
+    <br />
+    {{ occurences }}
+    <br />
+    {% endfor %}
+
+</body>
+</html>
